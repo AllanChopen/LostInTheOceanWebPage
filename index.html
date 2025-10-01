@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lost In The Ocean - Official Site</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Official site for Lost In The Ocean. New music, tour dates, blog, merch, and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Unica+One&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Mobile Nav Toggle -->
+  <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <header class="site-header">
+    <div class="logo">
+      <span class="logo-mark" aria-hidden="true">◎</span>
+      <span class="logo-text">Lost In The Ocean</span>
+    </div>
+    <nav class="site-nav" aria-label="Main Navigation">
+      <ul>
+        <li><a href="#music">Music</a></li>
+        <li><a href="#tour">Tour</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#merch">Merch</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="social-inline">
+      <a href="#" aria-label="Spotify" class="ico spotify" title="Spotify"></a>
+      <a href="#" aria-label="Apple Music" class="ico apple" title="Apple Music"></a>
+      <a href="#" aria-label="YouTube" class="ico youtube" title="YouTube"></a>
+      <a href="#" aria-label="Instagram" class="ico instagram" title="Instagram"></a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero" aria-label="Hero section">
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-inner">
+      <h1 class="hero-title">
+        <span class="line">NEW ERA</span>
+        <span class="line accent">Lost In The Ocean</span>
+        <span class="line small">OUT NOW</span>
+      </h1>
+      <div class="hero-cta-group">
+        <a class="btn primary" href="#music">Listen Now</a>
+        <a class="btn ghost" href="#tour">View Tour Dates</a>
+      </div>
+      <div class="hero-scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="mouse"><div class="wheel"></div></div>
+      </div>
+    </div>
+    <div class="hero-overlay-gradient" aria-hidden="true"></div>
+  </section>
+
+  <!-- Music -->
+  <section id="music" class="section section-tight">
+    <div class="section-header">
+      <h2 class="section-title">Latest Release</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="release-grid">
+      <div class="release-art">
+        <div class="cover">
+          <img src="assets/cover-placeholder.jpg" alt="Album cover placeholder" loading="lazy" />
+          <div class="cover-glow"></div>
+        </div>
+      </div>
+      <div class="release-meta">
+        <h3 class="release-name">“Fractured Horizon”</h3>
+        <p class="release-tagline">A journey through abyssal resonance and twilight textures.</p>
+        <ul class="tracklist" aria-label="Track list">
+          <li>01. Arrival</li>
+          <li>02. Echoes Within</li>
+          <li>03. Fractured Horizon</li>
+          <li>04. Ashen Skies</li>
+          <li>05. Resurgence</li>
+        </ul>
+        <div class="platform-buttons">
+          <a href="#" class="platform-btn">Spotify</a>
+          <a href="#" class="platform-btn">Apple</a>
+          <a href="#" class="platform-btn">Bandcamp</a>
+          <a href="#" class="platform-btn">YouTube</a>
+        </div>
+        <div class="embed-wrapper" aria-label="Streaming player">
+          <iframe title="Streaming Player Placeholder" src="about:blank"></iframe>
+          <div class="embed-placeholder"><span>Embed Player Placeholder</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tour -->
+  <section id="tour" class="section dark-accent">
+    <div class="section-header">
+      <h2 class="section-title">Tour Dates</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="tour-list" role="list" aria-label="Upcoming tour dates">
+      <article class="tour-item" role="listitem">
+        <div class="tour-date"><span class="day">12</span><span class="month">NOV</span><span class="year">2025</span></div>
+        <div class="tour-info"><h3 class="city">Berlin, DE</h3><p class="venue">Colossus Hall</p></div>
+        <div class="tour-actions"><a href="#" class="btn small primary">Tickets</a></div>
+      </article>
+      <article class="tour-item" role="listitem">
+        <div class="tour-date"><span class="day">15</span><span class="month">NOV</span><span class="year">2025</span></div>
+        <div class="tour-info"><h3 class="city">Prague, CZ</h3><p class="venue">Vortex Arena</p></div>
+        <div class="tour-actions"><a href="#" class="btn small ghost">Tickets</a></div>
+      </article>
+      <article class="tour-item sold-out" role="listitem" aria-label="Tour date sold out">
+        <div class="tour-date"><span class="day">20</span><span class="month">NOV</span><span class="year">2025</span></div>
+        <div class="tour-info"><h3 class="city">Paris, FR</h3><p class="venue">Théâtre Noir</p></div>
+        <div class="tour-actions"><span class="sold-out-badge">Sold Out</span></div>
+      </article>
+      <article class="tour-item" role="listitem">
+        <div class="tour-date"><span class="day">26</span><span class="month">NOV</span><span class="year">2025</span></div>
+        <div class="tour-info"><h3 class="city">London, UK</h3><p class="venue">Obsidian Forum</p></div>
+        <div class="tour-actions"><a href="#" class="btn small primary">Tickets</a></div>
+      </article>
+    </div>
+    <div class="center"><a href="#" class="btn outline wide">All Dates</a></div>
+  </section>
+
+  <!-- Video -->
+  <section id="video" class="section">
+    <div class="section-header">
+      <h2 class="section-title">Featured Video</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="video-wrapper">
+      <div class="video-aspect">
+        <iframe title="Video placeholder" src="about:blank" allowfullscreen></iframe>
+        <div class="video-overlay">
+          <button class="play-btn" aria-label="Play video"><span class="triangle"></span></button>
+          <p class="video-caption">“Fractured Horizon” Official Visualizer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section id="blog" class="section blog-section">
+    <div class="section-header">
+      <h2 class="section-title">Blog</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="blog-grid" aria-label="Latest blog posts">
+      <article class="blog-card">
+        <a href="#" class="card-link" aria-label="Read post: Studio Journal 01"></a>
+        <div class="card-meta"><time datetime="2025-09-15">15 Sep 2025</time><span class="dot-sep">•</span><span class="read">4 min read</span></div>
+        <h3 class="card-title">Studio Journal 01: Carving Low Tides</h3>
+        <p class="card-excerpt">We spent the last week sculpting granular swells and re‑amping bass through a submerged speaker rig. Here’s what stuck...</p>
+        <div class="card-tags"><span class="tag">Studio</span><span class="tag">Production</span></div>
+        <span class="card-cta">Read More →</span>
+      </article>
+      <article class="blog-card">
+        <a href="#" class="card-link" aria-label="Read post: Visual Concepts"></a>
+        <div class="card-meta"><time datetime="2025-08-22">22 Aug 2025</time><span class="dot-sep">•</span><span class="read">3 min read</span></div>
+        <h3 class="card-title">Visual Concepts: Depth, Mist, Light Fractures</h3>
+        <p class="card-excerpt">Exploring the aesthetic language behind the album art—marine chiaroscuro, diffraction, and decayed cartography.</p>
+        <div class="card-tags"><span class="tag">Art</span><span class="tag">Inspiration</span></div>
+        <span class="card-cta">Read More →</span>
+      </article>
+      <article class="blog-card">
+        <a href="#" class="card-link" aria-label="Read post: Signal Chain"></a>
+        <div class="card-meta"><time datetime="2025-07-30">30 Jul 2025</time><span class="dot-sep">•</span><span class="read">6 min read</span></div>
+        <h3 class="card-title">Signal Chain Deep Dive: Crushing the Abyss</h3>
+        <p class="card-excerpt">From baritone fuzz layers to parallel convolution tails—this is the exact chain shaping the low‑frequency undertow.</p>
+        <div class="card-tags"><span class="tag">Gear</span><span class="tag">Technical</span></div>
+        <span class="card-cta">Read More →</span>
+      </article>
+      <article class="blog-card">
+        <a href="#" class="card-link" aria-label="Read post: Tour Prep"></a>
+        <div class="card-meta"><time datetime="2025-07-02">02 Jul 2025</time><span class="dot-sep">•</span><span class="read">5 min read</span></div>
+        <h3 class="card-title">Tour Prep Rituals: Ocean Breathing</h3>
+        <p class="card-excerpt">Pre‑show drones, breath pacing, saltwater diffusion and why we mute all lights for 90 seconds before walking out.</p>
+        <div class="card-tags"><span class="tag">Tour</span><span class="tag">Process</span></div>
+        <span class="card-cta">Read More →</span>
+      </article>
+    </div>
+    <nav class="blog-pagination" aria-label="Blog pagination">
+      <button class="btn ghost" disabled>« Newer</button>
+      <button class="btn ghost">Older »</button>
+    </nav>
+  </section>
+
+  <!-- Merch -->
+  <section id="merch" class="section dark-accent">
+    <div class="section-header">
+      <h2 class="section-title">Merch</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="merch-grid">
+      <div class="merch-item">
+        <div class="merch-img"><img src="assets/shirt1-placeholder.jpg" alt="T-shirt design 1" loading="lazy" /></div>
+        <h3 class="merch-title">Shard Logo Tee</h3>
+        <p class="price">$30</p>
+        <a href="#" class="btn small ghost">View</a>
+      </div>
+      <div class="merch-item">
+        <div class="merch-img"><img src="assets/shirt2-placeholder.jpg" alt="T-shirt design 2" loading="lazy" /></div>
+        <h3 class="merch-title">Horizon Long Sleeve</h3>
+        <p class="price">$40</p>
+        <a href="#" class="btn small ghost">View</a>
+      </div>
+      <div class="merch-item">
+        <div class="merch-img"><img src="assets/vinyl-placeholder.jpg" alt="Vinyl record" loading="lazy" /></div>
+        <h3 class="merch-title">Limited Vinyl</h3>
+        <p class="price">$28</p>
+        <a href="#" class="btn small ghost">View</a>
+      </div>
+      <div class="merch-item">
+        <div class="merch-img"><img src="assets/hoodie-placeholder.jpg" alt="Hoodie design" loading="lazy" /></div>
+        <h3 class="merch-title">Obsidian Hoodie</h3>
+        <p class="price">$55</p>
+        <a href="#" class="btn small ghost">View</a>
+      </div>
+    </div>
+    <div class="center"><a href="#" class="btn outline wide">Visit Store</a></div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section section-tight">
+    <div class="contact-card">
+      <h2>Contact Us</h2>
+      <p>Booking, press, collaborations, or just say hello. We’ll get back as soon as possible.</p>
+      <form class="contact-form" novalidate>
+        <div class="form-grid">
+          <div class="field">
+            <label for="name">Name<span aria-hidden="true" class="req">*</span></label>
+            <input id="name" name="name" type="text" required placeholder="Your name" autocomplete="name" />
+          </div>
+          <div class="field">
+            <label for="email">Email<span aria-hidden="true" class="req">*</span></label>
+            <input id="email" name="email" type="email" required placeholder="your@email.com" />
+          </div>
+        </div>
+        <div class="field">
+          <label for="subject">Subject<span aria-hidden="true" class="req">*</span></label>
+          <input id="subject" name="subject" type="text" required placeholder="Booking Inquiry / Press / General" />
+        </div>
+        <div class="field">
+          <label for="message">Message<span aria-hidden="true" class="req">*</span></label>
+          <textarea id="message" name="message" rows="6" required placeholder="Write your message..."></textarea>
+        </div>
+        <div class="actions">
+          <button type="submit" class="btn primary">Send Message</button>
+        </div>
+        <p class="form-note">We respect your privacy. No spam—ever.</p>
+        <div class="form-message" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo small">
+          <span class="logo-mark">◎</span>
+          <span class="logo-text">Lost In The Ocean</span>
+        </div>
+        <p class="tagline">Heavy • Atmospheric • Cinematic</p>
+        <div class="social-footer">
+          <a href="#" aria-label="Spotify" class="ico spotify"></a>
+          <a href="#" aria-label="Apple Music" class="ico apple"></a>
+          <a href="#" aria-label="YouTube" class="ico youtube"></a>
+          <a href="#" aria-label="Instagram" class="ico instagram"></a>
+          <a href="#" aria-label="Twitter/X" class="ico x"></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#music">Music</a></li>
+          <li><a href="#tour">Tour</a></li>
+          <li><a href="#video">Video</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#merch">Merch</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#contact">Contact Team</a></li>
+          <li><a href="#">Press Kit</a></li>
+          <li><a href="#">Licensing</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Latest</h4>
+        <ul class="mini-feed">
+          <li><span class="dot"></span> Vinyl pre-orders shipping soon</li>
+          <li><span class="dot"></span> New video teaser out now</li>
+          <li><span class="dot"></span> Additional EU dates added</li>
+        </ul>
+      </div>
+    </div>
+    <div class="sub-footer">
+      <small>&copy; <span id="year"></span> Lost In The Ocean. All rights reserved.</small>
+    </div>
+  </footer>
+</body>
+</html>
